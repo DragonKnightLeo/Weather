@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <title>Weather Crusader</title>
+  </head>
+  <body>
+   <div class="search">
+      <input id="search" type="text" class="searchField" placeholder="City">
+      <button type="submit" class="searchButton" onclick="search()">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+    <div class="card">
+      <div class="icon sun-shower">
+        <div class="cloud"></div>
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+        <div class="rain"></div>
+      </div>
+     <div class="container">
+       <p id="temp">64° F</p><p id="city">Charlotte</p>
+     </div>
+     <div class="container-1">
+       <ul>
+         <li id="prec"><b>Precipatation:</b> 23%</li>
+         <li id="humi"><b>Humidity:</b> 86%</li>
+         <li id="wind"><b>Wind:</b> 4 mph</li>
+       </ul>
+       <button type="button" name="button">Precipatation</button>
+       <button type="button" name="button">Humidity</button>
+       <button type="button" name="button">Wind</button>
+     </div>
+     <div class="container-2">
+       <h3>7-Day Forecast</h3>
+       <div class="mini-card-row">
+         <div class="mini-card">Mon<img src="images/cloud.png" alt=""></div>
+         <div class="mini-card">Tue<img src="images/cloud-rain.png" alt=""></div>
+         <div class="mini-card">Wed<img src="images/thunderstorm.png" alt=""></div>
+         <div class="mini-card">Thur<img src="images/rain-night.png" alt=""></div>
+         <div class="mini-card">Fri<img id="sun" src="images/sun.png" alt=""></div>
+         <div class="mini-card">Sat<img src="images/thunderstorm.png" alt=""></div>
+         <div class="mini-card">Sun<img src="images/cloud.png" alt=""></div>
+       </div>
+     </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/7162f05ba9.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
